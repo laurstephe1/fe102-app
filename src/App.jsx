@@ -1,4 +1,5 @@
 import ProfileCard from './components/ProfileCard.jsx'
+import './App.css'
 
 const profiles = [
   {
@@ -24,7 +25,7 @@ const profiles = [
     name: "Grace Hopper",
     program: "Software Engineering",
     school: "Yale University",
-    tagline: "The most dangerous phrase is 'we've always done it this way'.",
+    tagline: "The most dangerous phrase is we've always done it this way.",
     skills: ["COBOL", "Compilers", "Leadership"],
     isFeatured: false,
   },
@@ -33,17 +34,21 @@ const profiles = [
 function App() {
   return (
     <div>
-      {profiles.map((profile) => (
-        <ProfileCard
-          key={profile.id}
-          name={profile.name}
-          program={profile.program}
-          school={profile.school}
-          tagline={profile.tagline}
-          skills={profile.skills}
-          isFeatured={profile.isFeatured}
-        />
-      ))}
+      <h1>Student Profiles</h1>
+      <p className="subtitle">FE102 — React Fundamentals</p>
+      <div className="card-grid">
+        {profiles.map((profile) => (
+          <ProfileCard
+            key={profile.id}
+            name={profile.name}
+            program={profile.program}
+            school={profile.school}
+            tagline={profile.tagline}
+            skills={profile.skills}
+            isFeatured={profile.isFeatured}
+          />
+        ))}
+      </div>
     </div>
   )
 }
