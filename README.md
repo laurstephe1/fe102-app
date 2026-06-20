@@ -1,16 +1,80 @@
-# React + Vite
+# Student Profile Cards
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React application built with Vite that displays student profile cards with skills, conditional badges, and a responsive grid layout.
 
-Currently, two official plugins are available:
+Built as part of my FE102 coursework at Maestro AI University.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Screenshot
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+> Add a screenshot here after you take one
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+
+- **React 19** — component-based UI
+- **Vite** — build tool and dev server with hot module replacement
+- **CSS Grid & Flexbox** — responsive card layout
+- **JavaScript ES6+** — arrow functions, destructuring, array methods
+
+---
+
+## Features
+
+- Reusable `ProfileCard` component driven by props
+- Skills rendered dynamically with `.map()`
+- Conditional "Featured" badge using `&&` rendering
+- Responsive grid layout that wraps on smaller screens
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js v18 or higher
+- npm
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/laurstephe1/fe102-app.git
+```
+
+2. Navigate into the project:
+```bash
+cd fe102-app
+```
+
+3. Install dependencies:
+```bash
+npm install
+```
+
+4. Start the development server:
+```bash
+npm run dev
+```
+
+5. Open your browser at `http://localhost:5173`
+
+---
+
+## What I Learned
+
+- How to break a UI into reusable components with props
+- How `.map()` replaces copy-pasting JSX elements
+- How conditional rendering controls what appears in the UI
+- How to organize a React project with components and scoped CSS
+- The Git branch workflow — build on a branch, merge when working
+
+---
+
+## Author
+
+**Lauren Stephens**  
+AI Software Engineering Student — Maestro AI University  
+[GitHub](https://github.com/laurstephe1)
